@@ -10,7 +10,7 @@ function AllUsers() {
     const [records, setRecords] = useState([])
     let navigate = useNavigate();
     useEffect(() => {
-      console.log("All users useEffect")
+      // console.log("All users useEffect")
         if(records.length === 0){
           getRecords()
         }
@@ -18,17 +18,17 @@ function AllUsers() {
     const getRecords = async() => {
         setLoading(true)
         try{
-          console.log("Get records")
+          // console.log("Get records")
             if(accessToken && user){
                 const tmp = user.role === 1 ? 'all':'user'
                 const res = await axios.get(`${process.env.REACT_APP_API}/user/all_infor`,
                 { 
-                    withCredentials: true,
+                    // withCredentials: true,
                     headers: {
                     Authorization: accessToken
                     }
                 })
-                console.log("AllUsersRecords: ",res.data.users)
+                // console.log("AllUsersRecords: ",res.data.users)
                 setRecords(res.data.users)
             }
         }catch(err){

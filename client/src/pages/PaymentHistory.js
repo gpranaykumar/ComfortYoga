@@ -19,12 +19,12 @@ function PaymentHistory() {
                 const tmp = user.role === 1 ? 'all':'user'
                 const res = await axios.get(`${process.env.REACT_APP_API}/payment/${tmp}`,
                 { 
-                    withCredentials: true,
+                    // withCredentials: true,
                     headers: {
                     Authorization: accessToken
                     }
                 })
-                console.log("PaymentRecords: ",res.data.result)
+                // console.log("PaymentRecords: ",res.data.result)
                 setRecords(res.data.result)
             }
         }catch(err){

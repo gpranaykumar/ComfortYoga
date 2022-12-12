@@ -30,7 +30,7 @@ export const AuthProvider = ({children}) => {
     
     const getAccess = async(ref) => {
       // console.log("getAccess: ",refreshToken, ref )
-      const res = await axios.post(`${process.env.REACT_APP_API}/user/refresh_token`, {refreshtoken:refreshToken? refreshToken: ref }, {withCredentials: true})
+      const res = await axios.post(`${process.env.REACT_APP_API}/user/refresh_token`, {refreshtoken:refreshToken? refreshToken: ref })
       // console.log(res.data)
       setAccessToken(res.data.accessToken)
       localStorage.setItem('isLoggedIn', true)
@@ -52,12 +52,12 @@ export const AuthProvider = ({children}) => {
 
             const res = await axios.get(`${process.env.REACT_APP_API}/user/infor`,
               { 
-                withCredentials: true,
+                // withCredentials: true,
                 headers: {
                   Authorization: accessToken 
                 }
               })
-            console.log("GetUserInfo: ",res.data.user)
+            // console.log("GetUserInfo: ",res.data.user)
             // localStorage.setItem('user', JSON.stringify(res.data.user));
             setUser(res.data.user)
           }
@@ -104,10 +104,10 @@ export const AuthProvider = ({children}) => {
     const LoginFun = async(email, password) => {
         setLoading(true)
         // console.log("ENV_API: ", process.env.REACT_APP_API)
-        console.log("Login: ",email, password)
+        // console.log("Login: ",email, password)
         try{
-          const res = await axios.post(`${process.env.REACT_APP_API}/user/login`, {email, password}, {withCredentials: true})
-          console.log("Login",res.data)
+          const res = await axios.post(`${process.env.REACT_APP_API}/user/login`, {email, password})
+          // console.log("Login",res.data)
           localStorage.setItem('refreshtoken', res.data.refreshtoken)
           localStorage.setItem('isLoggedIn', true)
           await getAccess(res.data.refreshtoken)

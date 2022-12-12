@@ -24,7 +24,7 @@ function UserHome() {
   }
 
   const SubmitPayDue = () => {
-    console.log("batch: ", batch.current.value)
+    // console.log("batch: ", batch.current.value)
     if(batch.current.value===""){
       return alert("Select Batch")
     }
