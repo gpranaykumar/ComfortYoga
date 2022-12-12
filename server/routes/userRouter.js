@@ -5,7 +5,7 @@ const auth = require('../middleware/auth')
 const authAdmin = require('../middleware/authAdmin')
 
 router.get('/hello', function(req, res){
-    res.send("Hello World!");
+    res.send("Hello User");
  });
 
 router.post('/register', userCtrl.register)
