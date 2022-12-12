@@ -3,6 +3,19 @@
 
 A Web Application where customers can register for Yoga Classes and make monthly Payments.
 
+Admin Credentials
+```
+Email : admin@gmail.com
+Password : abcd1234
+```
+
+User Credentials
+```
+Email : user2@gmail.com
+Password : abcd1234
+```
+
+
 ## Tech Stack
 
 **Client:** React, TailwindCSS
