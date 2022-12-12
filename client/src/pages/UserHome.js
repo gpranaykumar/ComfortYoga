@@ -77,7 +77,7 @@ function UserHome() {
               <div className='h-[1px] w-full bg-white'>
               </div>
               <div className='input-div-gpk'>
-                <h1 className='py-2 text-red-500'>Due for This Month ₹1000</h1>
+                <h1 className='py-2 text-red-500'>Due for This Month ₹500</h1>
                 <h3 className='pb-2'>Select Batch for This Month:</h3>
                   <select ref={batch} className='input-gpk text-black'>
                       {batches.map(option => (
