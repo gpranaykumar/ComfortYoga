@@ -73,7 +73,6 @@ function Register() {
       }
     }
   }
-  
   const submitBtn = async () => {
     const age = calculateAge(data.dob)
     console.log("Age: ",age)
@@ -85,6 +84,8 @@ function Register() {
       alert("Age Limit is 18-65")
     }else if(!data.name || !data.batch || !data.phoneNo || !data.gender){
       alert("Fill all fields")
+    }else if(data.phoneNo.length !== 10){
+      alert("Enter Valid Contact No")
     }else if(!data.avatar){
       alert("Upload Photo")
     }else{
