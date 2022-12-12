@@ -89,7 +89,7 @@ function Register() {
     }else if(!data.avatar){
       alert("Upload Photo")
     }else{
-      let tid = await RegisterFun(data.avatar, data.name, data.email, data.password, data.gender, data.dob, data.phoneNo)
+      let tid = await RegisterFun(data.avatar, data.name, data.email.toLowerCase(), data.password, data.gender, data.dob, data.phoneNo)
       setUserId(tid)
       setShowPaymentScreen(true)
     }

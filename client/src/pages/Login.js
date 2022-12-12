@@ -17,7 +17,8 @@ function Login() {
     }else if(password.length < 6){
       alert("Password must be atleast 6 characters")
     }else{
-      LoginFun(email, password)
+      console.log(email.toLowerCase())
+      LoginFun(email.toLowerCase(), password)
     }
   }
   return (
