@@ -14,7 +14,7 @@ A Web Application where customers can register for Yoga Classes and make monthly
 
 #### Login
 
-```http
+```
   POST /api/user/login
 ```
 
@@ -27,7 +27,7 @@ return { RefreshToken }
 
 #### Register
 
-```http
+```
   POST /api/user/register
 ```
 
@@ -43,7 +43,7 @@ return { RefreshToken }
 
 #### To Get Access Token
 
-```http
+```
   POST /api/user/refresh_token
 ```
 
@@ -53,7 +53,7 @@ return { RefreshToken }
 
 #### Get User Details
 
-```http
+```
   GET /api/user/infor
 ```
 
@@ -63,7 +63,7 @@ return { RefreshToken }
 
 #### Get All Users Details
 
-```http
+```
   GET /api/user/all_infor
 ```
 
@@ -73,7 +73,7 @@ return { RefreshToken }
 
 #### Get User's Payment History
 
-```http
+```
   GET /api/payment/user
 ```
 
@@ -83,7 +83,7 @@ return { RefreshToken }
 
 #### Get All User's Payment History
 
-```http
+```
   GET /api/payment/all
 ```
 
@@ -93,7 +93,7 @@ return { RefreshToken }
 
 #### Add Payment
 
-```http
+```
   POST /api/payment/add
 ```
 
@@ -109,7 +109,7 @@ return { RefreshToken }
 
 #### Upload Photo
 
-```http
+```
   POST /api/upload_avatar
 ```
 
