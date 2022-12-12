@@ -9,7 +9,7 @@ function PaymentGateway({cmptPay}) {
                   Payment Gateway
                 </h1>
                 <p className=''>
-                  Make Payment ?
+                  Make ₹500 Payment ?
                 </p>
                 <button className='cust-btn bg-green-500 text-white' onClick={() => cmptPay("success")}>
                   Success

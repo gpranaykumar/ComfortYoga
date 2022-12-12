@@ -10,7 +10,7 @@ function Home() {
                 Clam Mind <br/> Strong Mind
             </h1>
             <h3 className='text-xl text-end'>
-                Just For ₹1000 
+                Just For ₹500 
             </h3>
             <div className='py-4 '>
                 <button className='p-2 px-4 mx-2 bg-secondary  rounded text-white trans-gpk hover:-translate-y-1 hover:scale-105'
